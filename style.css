@@ -1,0 +1,150 @@
+body {
+    font-family: 'Baloo Paaji 2', cursive;
+    background-color: #3498db;
+    margin: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+}
+
+.container {
+    text-align: center;
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.cool-text {
+    color: #3498db; /* Blue color */
+    font-size: 24px;
+    position: relative;
+    display: inline-block;
+}
+
+.cool-text:before,
+.cool-text:after {
+    content: '';
+    position: absolute;
+    height: 3px;
+    background-color: #3498db; /* Blue color */
+    width: 30px;
+    top: 50%;
+}
+
+.cool-text:before {
+    right: 100%;
+    margin-right: 10px;
+}
+
+.cool-text:after {
+    left: 100%;
+    margin-left: 10px;
+}
+
+.birthday-img,
+.birthday-img-left {
+    width: 80px; /* Adjust the size as needed */
+    height: 80px; /* Adjust the size as needed */
+    border-radius: 50%;
+    margin: 20px 10px; /* Adjust margin for spacing */
+}
+
+.decorations {
+    position: relative;
+}
+
+#cake {
+    background-color: #f06292;
+    width: 80px;
+    height: 80px;
+    margin: 20px auto;
+    border-radius: 50% 50% 0 0;
+    position: relative;
+}
+
+#cake:before,
+#cake:after {
+    content: '';
+    background-color: #fff;
+    width: 10px;
+    height: 80px;
+    position: absolute;
+}
+
+#cake:before {
+    border-radius: 0 5px 0 0;
+    transform: skew(-20deg);
+    left: 0;
+}
+
+#cake:after {
+    border-radius: 5px 0 0 0;
+    transform: skew(20deg);
+    right: 0;
+}
+
+.balloon {
+    background-color: #f8c471;
+    width: 20px;
+    height: 30px;
+    border-radius: 50%;
+    position: absolute;
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    animation: balloonFloat 1s infinite alternate;
+}
+
+@keyframes balloonFloat {
+    0% {
+        transform: translateX(-50%) translateY(0);
+    }
+    100% {
+        transform: translateX(-50%) translateY(-10px);
+    }
+}
+
+.flower {
+    width: 30px;
+    height: 30px;
+    background-color: #4caf50; /* Green color */
+    position: absolute;
+    clip-path: polygon(50% 0%, 0% 100%, 100% 100%);
+}
+
+.flower-top-left {
+    top: 0;
+    left: 0;
+}
+
+.flower-top-right {
+    top: 0;
+    right: 0;
+}
+
+.candles {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+.candle {
+    width: 10px;
+    height: 50px;
+    background-color: #ffd700; /* Gold color */
+    border-radius: 5px;
+    margin: 0 5px;
+}
+
+.cool-text,
+p,
+.birthday-wish {
+    line-height: 1.5;
+}
+
+
+
+
+
